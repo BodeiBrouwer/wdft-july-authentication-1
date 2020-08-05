@@ -41,7 +41,7 @@ const MongoStore = require('connect-mongo')(session);
 app.use(session({
   secret: 'my-pet-cat',
   cookie: {
-    maxAge: 60*60*24*1000 // 1day // in milliseconds 
+    maxAge: 62*60*24*1000 // 1day // in milliseconds 
   },
   store: new MongoStore({
     mongooseConnection: mongoose.connection,
